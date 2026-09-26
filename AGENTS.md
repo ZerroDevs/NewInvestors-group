@@ -1,9 +1,26 @@
-<!-- BEGIN:nextjs-agent-rules -->
+# Agent Directives & Operational Rules
 
-# This is NOT the Next.js you know
+This document governs the operational workflow, architectural constraints, and quality gates for AI coding agents operating on this repository.
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+## 1. Golden Rules of Development
 
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+1. **Never Duplicate Pages Blindly:** Create modular, component-driven layouts. Shared UI elements must live inside `src/components/ui/` or `src/components/layout/`.
+2. **Never Hardcode Text:** All visible copy (titles, subheadings, labels, placeholders, errors) must be registered in both `messages/en.json` and `messages/ar.json`.
+3. **Preserve Asset Paths:** Always reference existing brand assets in `public/assets/images/`:
+   - Transparent logo: `Logo-nobg.png` (or `.jpeg`)
+   - Container logo: `Logo-bg.jpeg`
+4. **Theme Preference:** The base/default theme must always render as `light` mode. Dark mode must remain an explicit option.
 
-<!-- END:nextjs-agent-rules -->
+## 2. Component Design Standards
+
+- Client Components must be explicitly declared with `'use client'` only when utilizing state, hooks, or browser event listeners.
+- Image assets must utilize `next/image` with specified dimensions or responsive `fill` properties to prevent cumulative layout shift (CLS).
+- Navigation elements must support both desktop menu bars and mobile drawer navigation with synchronized locale-aware links.
+
+## 3. Quality & Verification Gates
+
+Before completing a task, the agent must ensure:
+
+- The TypeScript build passes without missing properties or implicit `any` types.
+- Both language dictionaries (`en.json`, `ar.json`) contain identical key paths.
+- All Tailwind color utilities align with the Navy (`#0F2847`) and Gold (`#C5A869`) brand guidelines.
