@@ -66,6 +66,9 @@ export async function generateMetadata({ params }: { params: Promise<{locale: st
       description,
       images: ['/assets/real-estate/dat2.jpg'],
     },
+    icons: {
+      apple: '/assets/images/Logo-bg.jpeg',
+    },
   };
 }
 

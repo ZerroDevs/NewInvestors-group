@@ -124,6 +124,7 @@ export default function Header() {
                 isTransparent ? "text-white hover:bg-white/20" : "text-[#0F2847] bg-gray-50 hover:bg-gray-100 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
               )}
               onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open Mobile Menu"
             >
               <Menu size={28} />
             </button>
@@ -164,6 +165,7 @@ export default function Header() {
                 <button 
                   onClick={() => setIsMobileMenuOpen(false)} 
                   className="text-gray-500 hover:text-[#0F2847] dark:hover:text-white bg-white dark:bg-gray-800 p-2 rounded-full shadow-sm"
+                  aria-label="Close Mobile Menu"
                 >
                   <X size={20} />
                 </button>
@@ -234,7 +236,13 @@ export default function Header() {
 
               {/* Social Footer */}
               <div className="p-8 flex justify-center mt-auto">
-                <a href="https://wa.me/218924295050" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C5A869] bg-white dark:bg-gray-800 p-4 rounded-full shadow-md flex items-center justify-center transition-colors transform hover:scale-105">
+                <a 
+                  href="https://wa.me/218924295050?text=مرحباً المستثمرون الجدد، أود الاستفسار عن مشاريعكم" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-[#C5A869] bg-white dark:bg-gray-800 p-4 rounded-full shadow-md flex items-center justify-center transition-colors transform hover:scale-105"
+                  aria-label="Contact via WhatsApp"
+                >
                   <Phone size={24} />
                 </a>
               </div>
