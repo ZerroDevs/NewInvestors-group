@@ -1,7 +1,6 @@
-"use client";
-
 import { useTranslations } from 'next-intl';
 import { Building2, Home } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Sectors() {
   const t = useTranslations('Sectors');
@@ -18,12 +17,16 @@ export default function Sectors() {
         </p>
       </div>
 
-      <div className="relative w-full py-20 md:py-32">
-        {/* Parallax Background */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: 'url(/assets/real-estate/dat2.jpg)' }}
-        >
+      <div className="relative w-full py-20 md:py-32" style={{ clipPath: 'inset(0)' }}>
+        {/* CSS Parallax Hack for buttery smooth performance on iOS & Desktop */}
+        <div className="fixed inset-0 w-full h-full z-0">
+          <Image 
+            src="/assets/real-estate/dat2.jpg"
+            alt="Tripoli Skyline"
+            fill
+            className="object-cover"
+            priority
+          />
           <div className="absolute inset-0 bg-[#0F2847]/80 mix-blend-multiply" />
         </div>
 
