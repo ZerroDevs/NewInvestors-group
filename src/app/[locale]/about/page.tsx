@@ -32,7 +32,7 @@ async function AboutContent() {
       <Hero title={tNav('about')} subtitle=" " height="half" />
 
       {/* Company Overview */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-[#0B132B] transition-colors">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2">
             <Image 
@@ -44,8 +44,8 @@ async function AboutContent() {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold text-[#0F2847] mb-6">{t('title')}</h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            <h2 className="text-3xl font-bold text-[#0F2847] dark:text-white mb-6">{t('title')}</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
               {t('description')}
             </p>
           </div>

@@ -2,6 +2,7 @@ import {setRequestLocale, getTranslations} from 'next-intl/server';
 import { MapPin, Mail, Phone } from 'lucide-react';
 import Hero from '@/components/home/Hero';
 import ContactForm from '@/components/contact/ContactForm';
+import AnimatedCompass from '@/components/contact/AnimatedCompass';
 
 export default async function ContactPage({
   params
@@ -28,10 +29,14 @@ export default async function ContactPage({
         <div className="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
           
           {/* Contact Info (Left) */}
-          <div className="w-full lg:w-1/3 bg-[#0F2847] text-white p-10 flex flex-col">
-            <h2 className="text-2xl font-bold text-[#C5A869] mb-8">{t('title')}</h2>
+          <div className="w-full lg:w-1/3 bg-[#0F2847] text-white p-10 flex flex-col relative overflow-hidden">
+            <AnimatedCompass />
             
-            <div className="space-y-8 flex-1">
+            <div className="relative z-10">
+              <h2 className="text-2xl font-bold text-[#C5A869] mb-8">{t('title')}</h2>
+            </div>
+            
+            <div className="space-y-8 flex-1 relative z-10">
               <div className="flex items-start gap-4">
                 <div className="bg-white/10 p-3 rounded-full text-[#C5A869] shrink-0">
                   <MapPin size={24} />

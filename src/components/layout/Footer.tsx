@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import AnimatedCompass from '@/components/contact/AnimatedCompass';
 
 // Custom WhatsApp Icon since Lucide's can sometimes be varied. Using SVG for precision.
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -18,8 +19,9 @@ export default function Footer() {
   const tContact = useTranslations('Contact');
 
   return (
-    <footer className="bg-[#0F2847] text-white pt-16 pb-8">
-      <div className="container mx-auto px-4 md:px-8">
+    <footer className="bg-[#0F2847] text-white pt-16 pb-8 relative overflow-hidden">
+      <AnimatedCompass />
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           
           {/* Column 1: Logo & Info */}
