@@ -90,8 +90,8 @@ export default function Header() {
                 className={clsx(
                   "font-bold text-lg transition-all hover:-translate-y-0.5",
                   isTransparent 
-                    ? (pathname === link.href ? "text-[#C5A869]" : "text-white/90 hover:text-white")
-                    : (pathname === link.href ? "text-[#C5A869]" : "text-[#0F2847] dark:text-white/90 hover:text-[#C5A869] dark:hover:text-[#C5A869]")
+                    ? (pathname === link.href ? "text-[#C5A869] drop-shadow-md" : "text-white/90 hover:text-white drop-shadow-md")
+                    : (pathname === link.href ? "text-[#0F2847] border-b-2 border-[#0F2847] dark:text-[#C5A869] dark:border-none" : "text-gray-700 dark:text-white/90 hover:text-[#0F2847] dark:hover:text-[#C5A869]")
                 )}
               >
                 {link.label}

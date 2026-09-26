@@ -9,7 +9,7 @@ export default function Sectors() {
   return (
     <section className="py-20 bg-white dark:bg-[#0B132B] transition-colors duration-300">
       <div className="container mx-auto px-4 text-center max-w-4xl mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#C5A869] mb-8">{t('title')}</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#0F2847] dark:text-[#C5A869] mb-8">{t('title')}</h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
           {t('description')}
         </p>

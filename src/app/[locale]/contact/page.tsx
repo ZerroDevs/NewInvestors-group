@@ -29,7 +29,7 @@ export default async function ContactPage({
           
           {/* Contact Info (Left) */}
           <div className="w-full lg:w-1/3 bg-[#0F2847] text-white p-10 flex flex-col">
-            <h3 className="text-2xl font-bold text-[#C5A869] mb-8">{t('title')}</h3>
+            <h2 className="text-2xl font-bold text-[#C5A869] mb-8">{t('title')}</h2>
             
             <div className="space-y-8 flex-1">
               <div className="flex items-start gap-4">
@@ -90,7 +90,7 @@ export default async function ContactPage({
 
           {/* Contact Form (Right) */}
           <div className="w-full lg:w-2/3 p-10 lg:p-16 bg-white dark:bg-[#1C2541] transition-colors">
-            <h3 className="text-2xl font-bold text-[#0F2847] dark:text-white mb-8">{tCommon('contactWithUs')}</h3>
+            <h2 className="text-2xl font-bold text-[#0F2847] dark:text-white mb-8">{tCommon('contactWithUs')}</h2>
             <ContactForm tDict={{
               formName: t('formName'),
               formEmail: t('formEmail'),
