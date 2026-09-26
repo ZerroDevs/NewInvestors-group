@@ -17,9 +17,9 @@ export default function CoreValues() {
   return (
     <section className="py-24 bg-white dark:bg-[#1C2541] transition-colors duration-300 overflow-hidden">
       <div className="container mx-auto px-4 text-center max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#C5A869] mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#0F2847] dark:text-[#C5A869] mb-6">
           {t('title')}
-          <div className="w-16 h-1 bg-[#0F2847] dark:bg-white mx-auto mt-4 rounded"></div>
+          <div className="w-16 h-1 bg-[#C5A869] dark:bg-white mx-auto mt-4 rounded"></div>
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-16">
           {t('description')}
@@ -48,7 +48,7 @@ export default function CoreValues() {
                 className={`relative w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 bg-white dark:bg-[#0B132B] border-2 border-[#0F2847] dark:border-[#2A3A5E] flex items-center justify-center transform rotate-45 shadow-sm transition-transform hover:scale-105 hover:z-30 z-10 ${desktopClasses} ${mobileMargin} ${mobileOffset}`}
               >
                 {/* Diamond Tip Number */}
-                <div className="absolute top-1 left-1 lg:top-2 lg:left-2 w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-[#C5A869] flex items-center justify-center text-white font-bold text-xs lg:text-sm shadow-md transform -rotate-45">
+                <div className="absolute top-1 left-1 lg:top-2 lg:left-2 w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-[#C5A869] flex items-center justify-center text-[#0F2847] font-bold text-xs lg:text-sm shadow-md transform -rotate-45">
                   {index + 1}
                 </div>
                 

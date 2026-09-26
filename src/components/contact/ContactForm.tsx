@@ -141,7 +141,7 @@ export default function ContactForm({ tDict }: ContactFormProps) {
         </label>
       </div>
 
-      <button type="submit" className="bg-[#C5A869] hover:bg-[#0F2847] text-white font-bold py-4 px-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-full md:w-auto min-w-[200px] mt-6">
+      <button type="submit" className="bg-[#0F2847] hover:bg-[#C5A869] text-white hover:text-[#0F2847] font-bold py-4 px-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-full md:w-auto min-w-[200px] mt-6">
         {tDict.send}
       </button>
     </form>

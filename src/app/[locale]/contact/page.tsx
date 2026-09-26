@@ -37,7 +37,7 @@ export default async function ContactPage({
                   <MapPin size={24} />
                 </div>
                 <div>
-                  <h4 className="text-gray-400 text-sm mb-1">{t('locationLabel')}</h4>
+                  <h3 className="text-gray-400 text-sm mb-1">{t('locationLabel')}</h3>
                   <p className="font-medium" dir="ltr">{t('locationValue')}</p>
                 </div>
               </div>
@@ -47,7 +47,7 @@ export default async function ContactPage({
                   <Mail size={24} />
                 </div>
                 <div>
-                  <h4 className="text-gray-400 text-sm mb-1">{t('emailLabel')}</h4>
+                  <h3 className="text-gray-400 text-sm mb-1">{t('emailLabel')}</h3>
                   <a href="mailto:info@newinvestgroup.ly" className="font-medium hover:text-[#C5A869] transition-colors" dir="ltr">
                     info@newinvestgroup.ly
                   </a>
@@ -59,7 +59,7 @@ export default async function ContactPage({
                   <Phone size={24} />
                 </div>
                 <div className="w-full">
-                  <h4 className="text-gray-400 text-sm mb-2">{t('phoneLabel')}</h4>
+                  <h3 className="text-gray-400 text-sm mb-2">{t('phoneLabel')}</h3>
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <span dir="ltr" className="font-medium">+218 92 429 5050</span>
