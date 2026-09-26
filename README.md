@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# New Investors | المستثمرون الجدد
 
-## Getting Started
+![New Investors Logo](./public/assets/images/Logo-bg.jpeg)
 
-First, run the development server:
+**New Investors (المستثمرون الجدد)** is a premium, localized real estate investment and development platform built for the Libyan market. It showcases high-value commercial and residential real estate development projects, providing a stunning user experience optimized for both Arabic (RTL) and English (LTR) readers.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Technology Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This platform is built using modern, bleeding-edge web technologies to ensure maximum performance, incredible SEO, and a premium UX.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js 15+](https://nextjs.org/) (React Server Components, App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Internationalization (i18n)**: [next-intl](https://next-intl-docs.vercel.app/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Theming**: `next-themes` (Dark/Light mode)
+- **Typography**: Optimized Google Fonts (Plus Jakarta Sans, Outfit, Alexandria, Geist Mono)
 
-## Learn More
+## ✨ Core Features
 
-To learn more about Next.js, take a look at the following resources:
+- **True Bi-directional UI**: Flawless switching between Arabic (Right-to-Left) and English (Left-to-Right).
+- **Cinematic Dark Mode**: Integrated deep navy and gold branding dynamically linked to user preference.
+- **Micro-interactions**: Hardware-accelerated hover effects, interactive cards, and page transition skeletons.
+- **SEO Optimized**: Dynamic OpenGraph images, Metadata generation, automated sitemap.xml, and strictly governed robots.txt policies blocking AI scrapers.
+- **Dynamic Contact Hub**: Integrated `mailto:` APIs formatting complex leads natively into the user's email client.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Local Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run this project locally on your machine:
 
-## Deploy on Vercel
+1. **Clone the repository** (Requires access rights)
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+3. **Run the Development Server**
+   ```bash
+   npm run dev
+   ```
+4. **Access the application**
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Architecture Overview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/src/app/[locale]/`: Contains all page routes configured for internationalization.
+- `/src/components/`: Reusable, modular UI blocks (Header, Hero, Sectors, Footer, ContactForm).
+- `/messages/`: Contains `en.json` and `ar.json` dictionary files acting as the single source of truth for all text in the app.
+- `/public/`: Hosts static assets, brand logos, imagery, and the SEO XML files.
+
+## ⚖️ Legal & Licensing
+
+This software is strictly proprietary. Unauthorized copying of this repository, via any medium, is strictly prohibited. See the `LICENSE` file for more details.
+
+**Developed by**: ZeroNux Studio  
+**Domain**: [https://newinvestgroup.ly](https://newinvestgroup.ly)
