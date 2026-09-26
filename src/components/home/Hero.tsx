@@ -36,7 +36,7 @@ export default function Hero({ title, subtitle, height = 'screen' }: HeroProps) 
   const handlePrev = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <section className={`relative ${height === 'screen' ? 'h-screen' : 'h-[50vh] min-h-[400px]'} w-full overflow-hidden flex items-center justify-center bg-[#0F2847]`}>
+    <section className={`relative ${height === 'screen' ? 'h-[65vh] md:h-screen' : 'h-[50vh] min-h-[400px]'} w-full overflow-hidden flex items-center justify-center bg-[#0F2847]`}>
       <AnimatePresence initial={false} mode="popLayout">
         <motion.div
           key={currentIndex}

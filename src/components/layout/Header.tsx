@@ -56,8 +56,9 @@ export default function Header() {
   const isTransparent = !isScrolled;
 
   return (
-    <header className={clsx(
-      "fixed top-0 w-full z-50 transition-all duration-500 border-b",
+    <>
+      <header className={clsx(
+        "fixed top-0 w-full z-50 transition-all duration-500 border-b",
       isTransparent 
         ? "bg-transparent border-transparent py-3 md:py-4" 
         : "bg-white/85 md:bg-white/70 dark:bg-[#0B132B]/80 backdrop-blur-xl backdrop-saturate-150 shadow-sm border-white/20 dark:border-gray-800/50 py-2 md:py-3"
@@ -129,18 +130,19 @@ export default function Header() {
           </div>
         </div>
       </div>
+      </header>
 
-      {/* Enhanced Mobile Menu Drawer */}
+      {/* Enhanced Mobile Menu Drawer (Moved outside header to avoid backdrop-filter stacking context bugs) */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <>
+          <div className="md:hidden">
             {/* Backdrop */}
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="fixed inset-0 bg-[#0F2847]/40 backdrop-blur-sm z-[60] md:hidden"
+              className="fixed inset-0 bg-[#0F2847]/60 backdrop-blur-sm z-[9998]"
             />
 
             {/* Drawer */}
@@ -149,7 +151,7 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: locale === 'ar' ? '100%' : '-100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 bottom-0 start-0 w-[85%] max-w-sm bg-gray-100 dark:bg-[#111827] shadow-2xl z-[70] md:hidden flex flex-col"
+              className="fixed top-0 bottom-0 start-0 w-[85%] max-w-sm bg-gray-100 dark:bg-[#111827] shadow-2xl z-[9999] flex flex-col"
             >
               <div className="p-6 flex justify-between items-center">
                 <Image 
@@ -232,14 +234,14 @@ export default function Header() {
 
               {/* Social Footer */}
               <div className="p-8 flex justify-center mt-auto">
-                <a href="tel:+218916808225" className="text-gray-400 hover:text-[#C5A869] bg-white dark:bg-gray-800 p-4 rounded-full shadow-md flex items-center justify-center transition-colors transform hover:scale-105">
+                <a href="https://wa.me/218924295050" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C5A869] bg-white dark:bg-gray-800 p-4 rounded-full shadow-md flex items-center justify-center transition-colors transform hover:scale-105">
                   <Phone size={24} />
                 </a>
               </div>
             </motion.div>
-          </>
+          </div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }
