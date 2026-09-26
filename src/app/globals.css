@@ -1,1 +1,49 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #0F2847;
+  --color-accent: #C5A869;
+  --color-surface-light: #F8F9FA;
+  --color-surface-dark: #0B132B;
+  --color-card-light: #FFFFFF;
+  --color-card-dark: #1C2541;
+  --color-border-light: #E2E8F0;
+  --color-border-dark: #2A3A5E;
+  --font-sans: var(--font-sans), sans-serif;
+  --font-heading: var(--font-heading), sans-serif;
+  --font-arabic: var(--font-arabic), sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-surface: var(--color-surface-light);
+    --bg-card: var(--color-card-light);
+    --border-subtle: var(--color-border-light);
+    --text-main: var(--color-primary);
+  }
+  
+  .dark {
+    --bg-surface: var(--color-surface-dark);
+    --bg-card: var(--color-card-dark);
+    --border-subtle: var(--color-border-dark);
+    --text-main: #FFFFFF;
+  }
+
+  body {
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+  }
+
+  /* Apply Outfit font to all headings specifically for English (LTR) */
+  html[dir="ltr"] h1,
+  html[dir="ltr"] h2,
+  html[dir="ltr"] h3,
+  html[dir="ltr"] h4,
+  html[dir="ltr"] h5,
+  html[dir="ltr"] h6 {
+    font-family: var(--font-heading);
+  }
+}

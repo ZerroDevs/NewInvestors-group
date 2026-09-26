@@ -1,0 +1,69 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "Common": {
+    "brandName": "New Investors",
+    "readMore": "Read More",
+    "send": "Send Message",
+    "quickLinks": "Quick Links",
+    "contactWithUs": "Contact With Us",
+    "developedBy": "Developed by",
+    "allRightsReserved": "All Rights Reserved."
+  },
+  "Hero": {
+    "title": "New Investors",
+    "subtitle": "The Source of Real Estate Investment and Development in Libya"
+  },
+  "Sectors": {
+    "title": "Why New Investors?",
+    "description": "New Investors is a Libyan company operating in real estate development and investment, focusing on developing qualitative real estate assets in strategic urban locations inside Libya. The company adopts a conservative business model based on market analysis, independent feasibility studies, risk management, and building partnerships with specialized consultants, with the aim of developing bankable and long-term value assets.",
+    "subDescription": "We work with dedication and seriousness in the following real estate development sectors:",
+    "commercial": "Commercial Sector",
+    "hospitality": "Residential Sector"
+  },
+  "VisionMission": {
+    "visionTitle": "Our Vision",
+    "visionDesc": "To be at the forefront of leading local companies in real estate investment and development, by providing real estate solutions that meet all stakeholder needs.",
+    "missionTitle": "Our Mission",
+    "missionDesc": "We always strive to meet the needs of stakeholders in the real estate investment and development sector, relying on the quality of services provided, speed of completion, and competitive prices.",
+    "messageTitle": "Our Message",
+    "messageDesc": "Providing creative real estate services and solutions, with thoughtful plans based on the study and analysis of the real estate market that meet all needs, at the highest level of creativity and professionalism."
+  },
+  "CoreValues": {
+    "title": "Our Values",
+    "description": "Quality, Professionalism, Creativity, Transparency, Credibility, Integrity are our values that we strive to apply and always adhere to in all our services. They are our guide and manual in dealing with clients; aiming to provide a service that leaves a strong imprint and impact, always earning our clients' satisfaction.",
+    "quality": "Quality",
+    "professionalism": "Professionalism",
+    "creativity": "Creativity",
+    "transparency": "Transparency",
+    "credibility": "Credibility",
+    "integrity": "Integrity"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "At New Investors, we value every inquiry and collaboration opportunity, as our team is always ready to assist you in all real estate development, investment, or real estate consulting needs. Whether you are an investor, client, or partner, we are here to provide professional and prompt support — do not hesitate to contact us at any time.",
+    "locationLabel": "Location",
+    "locationValue": "AinZara - Tripoli / Libya",
+    "phoneLabel": "Call Us",
+    "emailLabel": "Email",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formPhone": "Phone",
+    "formSubject": "Subject",
+    "formMessage": "Message",
+    "formNamePlaceholder": "e.g. John Doe",
+    "formEmailPlaceholder": "e.g. email@example.com",
+    "formPhonePlaceholder": "e.g. +218 92 000 0000",
+    "formSubjectPlaceholder": "How can we help you?",
+    "formMessagePlaceholder": "Write your message here...",
+    "formAgreeCheck": "I agree to the privacy policy and terms of service."
+  },
+  "NotFound": {
+    "title": "404 - Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home"
+  }
+}
