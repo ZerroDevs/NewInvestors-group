@@ -92,7 +92,7 @@ export default function Footer() {
                   {/* Phone 1 */}
                   <div className="flex items-center gap-3 w-full max-w-xs">
                     <span dir="ltr" className="text-gray-300 font-medium">+218 92 429 5050</span>
-                    <a href="https://wa.me/218924295050" target="_blank" rel="noreferrer" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors">
+                    <a href="https://wa.me/218924295050" target="_blank" rel="noreferrer" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors" aria-label="Contact via WhatsApp">
                       <WhatsAppIcon className="w-5 h-5" />
                     </a>
                   </div>
@@ -100,7 +100,7 @@ export default function Footer() {
                   {/* Phone 2 */}
                   <div className="flex items-center gap-3 w-full max-w-xs">
                     <span dir="ltr" className="text-gray-300 font-medium">+218 91 614 1616</span>
-                    <a href="https://wa.me/218916141616" target="_blank" rel="noreferrer" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors">
+                    <a href="https://wa.me/218916141616" target="_blank" rel="noreferrer" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors" aria-label="Contact via WhatsApp">
                       <WhatsAppIcon className="w-5 h-5" />
                     </a>
                   </div>
@@ -108,7 +108,7 @@ export default function Footer() {
                   {/* Phone 3 */}
                   <div className="flex items-center gap-3 w-full max-w-xs">
                     <span dir="ltr" className="text-gray-300 font-medium">+218 92 211 7555</span>
-                    <a href="https://wa.me/218922117555" target="_blank" rel="noreferrer" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors">
+                    <a href="https://wa.me/218922117555" target="_blank" rel="noreferrer" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors" aria-label="Contact via WhatsApp">
                       <WhatsAppIcon className="w-5 h-5" />
                     </a>
                   </div>

@@ -63,19 +63,19 @@ export default async function ContactPage({
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <span dir="ltr" className="font-medium">+218 92 429 5050</span>
-                      <a href="https://wa.me/218924295050" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors" title="WhatsApp">
+                      <a href="https://wa.me/218924295050" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors" title="WhatsApp" aria-label="Contact via WhatsApp">
                         <WhatsAppIcon />
                       </a>
                     </div>
                     <div className="flex items-center gap-3">
                       <span dir="ltr" className="font-medium">+218 91 614 1616</span>
-                      <a href="https://wa.me/218916141616" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors" title="WhatsApp">
+                      <a href="https://wa.me/218916141616" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors" title="WhatsApp" aria-label="Contact via WhatsApp">
                         <WhatsAppIcon />
                       </a>
                     </div>
                     <div className="flex items-center gap-3">
                       <span dir="ltr" className="font-medium">+218 92 211 7555</span>
-                      <a href="https://wa.me/218922117555" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors" title="WhatsApp">
+                      <a href="https://wa.me/218922117555" className="text-[#25D366] hover:text-[#1ebd5a] transition-colors" title="WhatsApp" aria-label="Contact via WhatsApp">
                         <WhatsAppIcon />
                       </a>
                     </div>

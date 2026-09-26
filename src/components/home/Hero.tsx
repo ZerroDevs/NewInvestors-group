@@ -73,24 +73,29 @@ export default function Hero({ title, subtitle, height = 'screen' }: HeroProps) 
       <button 
         onClick={isRtl ? handleNext : handlePrev}
         className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/20 hover:bg-[#C5A869]/80 text-white transition-all backdrop-blur-sm"
+        aria-label="Previous Slide"
       >
         <ChevronLeft size={36} />
       </button>
       <button 
         onClick={isRtl ? handlePrev : handleNext}
         className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/20 hover:bg-[#C5A869]/80 text-white transition-all backdrop-blur-sm"
+        aria-label="Next Slide"
       >
         <ChevronRight size={36} />
       </button>
 
       {/* Indicators */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex space-x-3 space-x-reverse rtl:space-x-reverse">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex space-x-1 space-x-reverse rtl:space-x-reverse">
         {images.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrentIndex(i)}
-            className={`w-3 h-3 rounded-full transition-all ${i === currentIndex ? 'bg-[#C5A869] scale-125' : 'bg-white/50'}`}
-          />
+            className="w-8 h-8 flex items-center justify-center"
+            aria-label={`Go to slide ${i + 1}`}
+          >
+            <span className={`w-3 h-3 rounded-full transition-all ${i === currentIndex ? 'bg-[#C5A869] scale-125' : 'bg-white/50'}`} />
+          </button>
         ))}
       </div>
     </section>

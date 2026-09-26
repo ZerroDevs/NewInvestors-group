@@ -54,9 +54,9 @@ export default function CoreValues() {
                 
                 {/* Content */}
                 <div className="transform -rotate-45 text-center">
-                  <h4 className="font-bold text-[#0F2847] dark:text-white text-xs sm:text-sm lg:text-lg px-2 leading-tight">
+                  <h3 className="font-bold text-[#0F2847] dark:text-white text-xs sm:text-sm lg:text-lg px-2 leading-tight">
                     {t(val)}
-                  </h4>
+                  </h3>
                 </div>
               </div>
             );

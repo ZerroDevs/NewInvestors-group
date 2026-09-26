@@ -36,7 +36,7 @@ export default function VisionMission() {
               <div className="text-[#C5A869] mb-6 p-4 rounded-full border border-[#C5A869]/30 bg-[#C5A869]/5">
                 {card.icon}
               </div>
-              <h3 className="text-2xl font-bold text-[#C5A869] mb-4">{card.title}</h3>
+              <h2 className="text-2xl font-bold text-[#0F2847] dark:text-[#C5A869] mb-4">{card.title}</h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base">
                 {card.desc}
               </p>
