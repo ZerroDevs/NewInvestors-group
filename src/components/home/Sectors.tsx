@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { Building2, Home } from 'lucide-react';
+import { Building2, Home, Droplet, Palmtree } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Sectors() {
@@ -31,8 +31,16 @@ export default function Sectors() {
         </div>
 
         {/* Overlapping Cards */}
-        <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+        <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row flex-wrap justify-center items-center gap-8 md:gap-16">
             
+            {/* Oil Card */}
+            <div className="bg-white dark:bg-[#1C2541] p-10 rounded-2xl shadow-2xl flex flex-col items-center justify-center w-64 h-64 hover:-translate-y-3 transition-transform duration-300 border border-transparent dark:border-gray-800">
+              <div className="w-20 h-20 mb-4 text-[#C5A869]">
+                <Droplet className="w-full h-full" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-xl font-bold text-[#0F2847] dark:text-white text-center">{t('oil')}</h3>
+            </div>
+
             {/* Commercial Card */}
             <div className="bg-white dark:bg-[#1C2541] p-10 rounded-2xl shadow-2xl flex flex-col items-center justify-center w-64 h-64 hover:-translate-y-3 transition-transform duration-300 border border-transparent dark:border-gray-800">
               <div className="w-20 h-20 mb-4 text-[#C5A869]">
@@ -47,6 +55,14 @@ export default function Sectors() {
                 <Home className="w-full h-full" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-bold text-[#0F2847] dark:text-white text-center">{t('hospitality')}</h3>
+            </div>
+
+            {/* Tourism Card */}
+            <div className="bg-white dark:bg-[#1C2541] p-10 rounded-2xl shadow-2xl flex flex-col items-center justify-center w-64 h-64 hover:-translate-y-3 transition-transform duration-300 border border-transparent dark:border-gray-800">
+              <div className="w-20 h-20 mb-4 text-[#C5A869]">
+                <Palmtree className="w-full h-full" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-xl font-bold text-[#0F2847] dark:text-white text-center">{t('tourism')}</h3>
             </div>
 
         </div>

@@ -9,6 +9,8 @@ import Image from 'next/image';
 
 const images = [
   '/assets/real-estate/dat1.jpg',
+  '/assets/real-estate/benghazi.jpg',
+  '/assets/real-estate/sabha.jpg',
   '/assets/real-estate/dat2.jpg'
 ];
 

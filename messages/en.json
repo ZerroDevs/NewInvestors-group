@@ -15,14 +15,16 @@
   },
   "Hero": {
     "title": "New Investors",
-    "subtitle": "The Source of Real Estate Investment and Development in Libya"
+    "subtitle": "The Source of Real Estate Investment and Development in Tripoli, Benghazi and Sabha"
   },
   "Sectors": {
     "title": "Why New Investors?",
     "description": "New Investors is a Libyan company operating in real estate development and investment, focusing on developing qualitative real estate assets in strategic urban locations inside Libya. The company adopts a conservative business model based on market analysis, independent feasibility studies, risk management, and building partnerships with specialized consultants, with the aim of developing bankable and long-term value assets.",
     "subDescription": "We work with dedication and seriousness in the following real estate development sectors:",
     "commercial": "Commercial Sector",
-    "hospitality": "Residential Sector"
+    "hospitality": "Residential Sector",
+    "oil": "Oil Sector",
+    "tourism": "Tourism Sector"
   },
   "VisionMission": {
     "visionTitle": "Our Vision",
